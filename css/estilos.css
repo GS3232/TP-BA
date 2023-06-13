@@ -1,27 +1,39 @@
 body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Pacifico', cursive;
     font-size: 16px;
     line-height: 20px;
-}
+    display: block;
+    margin: 8px;}
+
+
+
 
 .holder {
-    margin-left: 1.5em;
+    margin-left: 5em;
 }
+
+
+  .center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
 /* ESTILOS HEADER  */
 
 header {
-    background-color: #2e64a1;
-    padding: 1em 0;
+    background: linear-gradient(rgb(243, 243, 243),rgb(254, 185, 254),rgb(241, 47, 160) ) ;
+    padding:3em ;
 }
 
 header h1 {
-    color: white;
-    font-size: 2.5em;
+    color: rgb(236, 240, 244);
+    font-size: 5em;
     font-style: italic;
     font-weight: 100;
-    display: inline-block;
-    margin: 0.5em 0;
+    padding:  2em;
+    
+
     /* position: relative;
     bottom: 30px; */
 }
@@ -29,8 +41,8 @@ header h1 {
 /* ESTILOS NAVBAR */
 
 nav {
-    background-color: #6da9ed;
-    margin-bottom: 2em;
+    background:linear-gradient(rgb(242, 230, 232),rgb(254, 171, 221),rgb(241, 47, 160));
+    margin-bottom: 5em;
 }
 
 nav ul {
@@ -41,13 +53,13 @@ nav ul {
 
 nav ul li {
     display: inline-block;
-    width: 13%;
+    width: 30%;
 }
 
 nav ul li a {
     color: white;
     text-decoration: none;
-    text-align: center;
+    text-decoration: solid;
     display: block;
     padding: 0.2em 0.4em;
     transition: all 0.2s ease;
@@ -58,16 +70,17 @@ nav ul li a:hover {
 }
 
 nav ul li a .activo {
-    background-color: #4c76a5;
+    background-color: #ede8ea;
 }
 
 
 /* ESTILOS MAIN  */
 
 h2 {
-    color: #2e64a1;
+    color: #dc579c;
     font-weight: 400;
     margin: 0 0 1em;
+    text-align: center;
 }
 
 .left {
@@ -78,196 +91,53 @@ h2 {
     float: right;
 }
 
-.homeimg {
-    margin-bottom: 1.5em;
-}
-
-.homeimg img {
-    width: 100%;
-}
-
 .columnas {
    display: flex;
    justify-content: space-between;
 }
 
-.bienvenidos .testimonios {
-    box-sizing: border-box;
-}
-
-.bienvenidos {
-    width: 75%;
-    padding-right: 10px;
- 
-}
-
-.testimonios h2 {
-    font-size: 1.3em;
-}
-
-.bienvenidos p {
-    text-align: justify;
-}
-
-.testimonios {
-    width: 25%;
-}
-
-.testimonio {
-    background-color: #ccc;
-    padding: 1em;
-}
-
-.testimonio .cita {
-    font-weight: bold;
-    font-style: italic;
-    font-size: 1.4em;
-    display: block;
-}
-
-.testimonio .autor {
-    font-size: 0.7em;
-    text-align: center;
-    margin: 1em 0;
-    display: block;
-}
 
 
 /* ESTILOS FOOTER  */
 
 footer {
-    background-color: #ccc;
+    background:linear-gradient(pink,violet,rgb(241, 47, 160));
     clear: both;
-    color: #333;
-    padding: 3em 0;
-    margin-top: 2em;
+    color: white;
+    padding: 3em 0 ;
+    margin-top: 3em;
     text-align: center;
 }
 /* FIN HOME */
 
-/* Inicio NOSOTROS */
-.historia p{
-    font: size 12px; 
-}
-.personas {
-    overflow: hidden;
-    display: flex;
-    justify-content: space-between;
 
 
-}
-.persona{
-    width: 18%;
-    border:1px solid gray ;
-    border-radius: 0.25em;
-    float: left;
-    margin-left: 2.25%;
-    box-sizing: border-box;
-}
-.persona{
-    text-align: center;
-}
-.persona img{
-    border-radius: 50%;
-    box-shadow: 0 0 5px rgba(0 , 0, 0, 0.5);
-    margin: 0.8em 0 1em;
-    max-width: 70%;
-}
-
-.persona h5,
-.persona h6{
-     text-align: center;
-     font-weight: normal;
-     color: #2e64a1;
-     margin: 0;
-}
-.persona h5{
-    font-size: 0.9em;
-}
-.persona h6{
-    font-size: 0.8em;
-    font-style: italic;
-}
-.persona p{
-    font-size: 0.7em;
-    color: #444;
-    margin: 0 1em 1em;
-}
-.persona :first-child{
-    margin-left: 0;
-}
-/* FIN DE NOSOTROS */
-
-/* INICIO SERVICIOS  */
-
-.servicio{
-    border: 1px solid #ccc ;
-    border-radius: 0.7em;
-    margin: 1em 0 ;
-    padding: 1em;
-    overflow: hidden;
-
-}
-
-.servicio .info{
-    width: 75%;
-}
-
-.servicio .info h4{
-    color: #2e64a1 ;
-    font-size: 1.2em;
-    font-weight: 500;
-    margin: 0 0 1em;
-    font-style: italic;
-    border-bottom: 1px solid #2e64a1;
-    padding-bottom: 0.5em ;
-
-}
-
-.servicio .info p {
-    font-size: 0.8em;
-    line-height: 1.2em;
-}
-
-.servicios img{
-    border-radius: 0.8em ;
-
-}
-
-.servicio:nth-child(even)  img{
-    float:right;
-    margin: 0 0 0 1em;
-
-}
-.servicio:nth-child(even) .info{
-    float: left;
-
-}
-.servicio:nth-child(odd) img{
-    float: left;
-    margin: 0 1em 0 0;
-
-}
-.servicio:nth-child(odd) .info{
-    float: right;
-}
-
-/* fin de servios */
 
 /* inicio galeria */
-.galeria img{
-    width: 18%;
-    border: 1px solid #ddd;
-    padding: 0.3em;
-    box-sizing: border-box;
-    margin-bottom: 28px;
-    margin: right 2%; 
-}
-.galeria{
+section{
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    width: 600px;
+    height: 430px;
 }
+
+section .img{
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .8;
+    transition: .5s ease;
+
+}
+
+section img:hover {
+    cursor: crosshair;
+    width: 300px;
+    opacity: 1;
+    filter: contrast(120%);
+
+
+}
+
 /* fin de galeria */
 /* INICIO CONTACTO */
 
@@ -320,9 +190,9 @@ footer {
 }
 
 .formulario input[type="submit"] {
-    background:#6da9ed ;
+    background:#e9cce7 ;
     box-shadow: 0 0 10px rgba(0 , 0, 0, 0.4);
-    color: white;
+    color: rgb(217, 87, 163);
     font-size: 16px;
     padding: 16px;
     padding: 6px 20px;
@@ -333,7 +203,7 @@ footer {
 }
 
 .formulario input[type="submit"]:hover{
-    background-color:#2e64a1 ;
+    background-color:#ef4fef ;
 }
 
 /*  FIN DE CONTACTO */
