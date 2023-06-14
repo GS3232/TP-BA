@@ -2,36 +2,30 @@ body {
     font-family: 'Pacifico', cursive;
     font-size: 16px;
     line-height: 20px;
-    display: block;
-    margin: 8px;}
-
-
-.holder {
-    margin-left: 5em;
 }
 
+center {
+    margin-left: 2em;
+}
 
-.center{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+.holder {
+    text-align: center; 
+}
 
 /* ESTILOS HEADER  */
 
 header {
-    background: linear-gradient(rgb(243, 243, 243),rgb(254, 185, 254),rgb(241, 47, 160) ) ;
-    padding:3em ;
+    background: linear-gradient(pink,rgb(228, 59, 135),white);
+    padding: 5em 0;
 }
 
 header h1 {
-    color: rgb(236, 240, 244);
-    font-size: 5em;
+    color: white;
+    font-size: 2.5em;
     font-style: italic;
     font-weight: 100;
-    padding:  2em;
-    
-
+    display: inline-block;
+    margin: 0.5em 0;
     /* position: relative;
     bottom: 30px; */
 }
@@ -39,8 +33,8 @@ header h1 {
 /* ESTILOS NAVBAR */
 
 nav {
-    background:linear-gradient(rgb(242, 230, 232),rgb(254, 171, 221),rgb(241, 47, 160));
-    margin-bottom: 5em;
+    background: linear-gradient(pink,rgb(228, 59, 135),white);
+    margin-bottom: 3em;
 }
 
 nav ul {
@@ -51,13 +45,13 @@ nav ul {
 
 nav ul li {
     display: inline-block;
-    width: 30%;
+    width: 13%;
 }
 
 nav ul li a {
     color: white;
     text-decoration: none;
-    text-decoration: solid;
+    text-align: center;
     display: block;
     padding: 0.2em 0.4em;
     transition: all 0.2s ease;
@@ -68,17 +62,16 @@ nav ul li a:hover {
 }
 
 nav ul li a .activo {
-    background-color: #ede8ea;
+    background-color: #fe5cd0;
 }
 
 
 /* ESTILOS MAIN  */
 
 h2 {
-    color: #dc579c;
+    color: #ff3cf2;
     font-weight: 400;
     margin: 0 0 1em;
-    text-align: center;
 }
 
 .left {
@@ -89,52 +82,45 @@ h2 {
     float: right;
 }
 
-.columnas {
-   display: flex;
-   justify-content: space-between;
-}
+
 
 
 
 /* ESTILOS FOOTER  */
 
 footer {
-    background:linear-gradient(pink,violet,rgb(241, 47, 160));
+    background-color: #ccc;
     clear: both;
-    color: white;
-    padding: 3em 0 ;
-    margin-top: 3em;
+    color: #333;
+    padding: 3em 0;
+    margin-top: 2em;
     text-align: center;
 }
 /* FIN HOME */
 
 
-
-
 /* inicio galeria */
-section{
+
+section {
     display: flex;
     width: 600px;
     height: 430px;
 }
-
-section .img{
+section .img {
     width: 0px;
     flex-grow: 1;
     object-fit: cover;
     opacity: .8;
     transition: .5s ease;
-
 }
-
-section img:hover {
+section img :hover{
     cursor: crosshair;
     width: 300px;
     opacity: 1;
     filter: contrast(120%);
-
-
 }
+
+
 
 /* fin de galeria */
 /* INICIO CONTACTO */
@@ -188,9 +174,9 @@ section img:hover {
 }
 
 .formulario input[type="submit"] {
-    background:#e9cce7 ;
+    background:#6da9ed ;
     box-shadow: 0 0 10px rgba(0 , 0, 0, 0.4);
-    color: rgb(217, 87, 163);
+    color: white;
     font-size: 16px;
     padding: 16px;
     padding: 6px 20px;
@@ -201,7 +187,7 @@ section img:hover {
 }
 
 .formulario input[type="submit"]:hover{
-    background-color:#ef4fef ;
+    background-color:#2e64a1 ;
 }
 
 /*  FIN DE CONTACTO */
