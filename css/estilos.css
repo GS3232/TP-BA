@@ -4,8 +4,12 @@ body {
     line-height: 20px;
     display: block;
     margin: 8px;}
-
-
+.html {
+        line-height: 1.15;
+        /* 1 */
+        -webkit-text-size-adjust: 100%;
+        /* 2 */
+    }
 
 
 .holder {
